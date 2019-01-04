@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Edie's Website
+		</title>
+		<meta charset="utf-8" name = "author" content="Edie"> 
+
+
+	</head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/index-style.css">
+	<link rel="stylesheet" href="../css/paper-dashboard.css">
+
+	<body>
+		<div class="navigator" style="background-color:#ff6666;">
+			<div id="brand">  Edie's Website
+			</div>
+			<div id="login">
+				<form>
+					<p style="color:white; display:inline-block; position: relative; top:5px">User Name<br>
+						<input type="text" placeholder="User Name" name="login-username">
+					</p>
+					<p style="color:white; display:inline-block; position: relative; top:5px">Password<br>
+						<input type="password" placeholder="Password" name="login-password">
+					</p>
+					<p style="display: inline-block; position: relative; margin:0px 20px">
+						<input type=button class="btn btn-warning" value="Log in" onclick="">
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="right-part" id="information">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="header">
+                        <h4 class="title">Create an account</h4>
+                        <p class="category">It's free!</p>
+                     </div>
+					<form id="signup">
+						<div class="col-md-10">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                 <input type="text" id="first" class="form-control border-input" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                 <input type="text" id="last" class="form-control border-input" placeholder="Last Name">
+                            </div>
+                        </div>
+						<div class="col-md-10">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" id="email" class="form-control border-input" placeholder="Email">
+                            </div>
+                        </div>
+						<div class="col-md-10">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                 <input type="number" id="phone" class="form-control border-input" placeholder="1234567890">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info btn-fill btn-wd"">Sign Up</button>
+                        </div>
+                        <div class="clearfix"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="../js/userServer.js"></script>
+</html>

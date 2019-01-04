@@ -1,0 +1,34 @@
+#brand{
+	position:reletive; 
+	display:inline-block; 
+	left:10%; 
+	margin:0px 20px;
+	font-weight:bold; 
+	font-size:50px; 
+	color:white; 
+}
+
+
+#login{
+	display:inline-block; 
+	float:right;
+}
+.right-part{
+	position:relative; 
+	display:inline-block; 
+	float:right; 
+	clear:right; 
+	width:450px;
+}
+#guide{
+	font-weight: bold; 
+	font-size: 40px;
+}
+#key{
+	color:black; 
+	display:inline-block; 
+	position: relative; 
+}
+#submit{
+
+}
