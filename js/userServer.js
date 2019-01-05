@@ -17,7 +17,7 @@
 // }
 
 (function($){
-        function processForm( e ){
+        function signupForm( e ){
             $.ajax({
                 url: 'http://localhost:4567/user',
                 dataType: 'json',
@@ -33,7 +33,8 @@
 			    success: function( data ){
                     var json = JSON.parse(JSON.stringify(data));
                     var user = JSON.parse(json.message);
-			        alert("User " +user.firstName+" is added!");
+                    $('#respond').html( "User " +user.firstName+" is added!" );
+			        
                     
 			    },
 			    error: function( data){
@@ -42,7 +43,41 @@
 			});
             e.preventDefault();
         }
-        $('#signup').submit( processForm );
+        $('#signup').submit( signupForm );
     })(jQuery);
+
+(function($){
+        function updateForm( e ){
+            $.ajax({
+                url: 'http://localhost:4567/user/'+$('#changeid').val(),
+                dataType: 'json',
+                type: 'put',
+                contentType: 'application/json',
+                traditional: true,
+                data: JSON.stringify(
+                    {"id": $("#changeid").val(), 
+                    "firstName": $("#changefirst").val(), 
+                    "lastName": $("#changelast").val(),
+                    "email": $("#changeemail").val()
+                }),
+                success: function( data ){
+
+                    var json = JSON.parse(JSON.stringify(data));
+                    if(json.status=="ERROR"){
+                        $('#respond').html( json.message);
+                    }else{
+                        var user = JSON.parse(json.message);
+                        $('#respond').html( "User " +user.firstName+" is updated!" ); 
+                    }     
+                },
+                error: function( data){
+                   alert(JSON.stringify(data));
+                }
+            });
+            e.preventDefault();
+        }
+        $('#update').submit( updateForm );
+    })(jQuery);
+
 
 

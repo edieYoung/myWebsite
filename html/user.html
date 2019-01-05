@@ -40,13 +40,13 @@
 	                </a>
 	            </div>
 	            <ul class="nav">
-	                <li class="active">
+	                <li>
 	                    <a href="index.html">
 	                        <i class="ti-panel"></i>
 	                        <p>Sign Up</p>
 	                    </a>
 	                </li>
-	                <li>
+	                <li class="active">
 	                    <a href="user.html">
 	                        <i class="ti-user"></i>
 	                        <p>ACCOUNT</p>
@@ -97,46 +97,53 @@
 								</form>
 							</div>
 						</div>
-						<div class="right-part" id="information">
+						<div class="right-part" id="profile">
 							<div class="col-md-12">
 								<div class="card">
-									<div class="header">
-				                        <h4 id="respond">
-				                        	Create an account
-				                        </h4>
-				                        <p class="category">It's free!</p>
-				                     </div>
-									<form id="signup">
-										<div class="col-md-10">
-				                            <div class="form-group">
-				                                <label>First Name</label>
-				                                 <input type="text" id="first" class="form-control border-input" placeholder="First Name">
-				                            </div>
-				                        </div>
-				                        <div class="col-md-10">
-				                            <div class="form-group">
-				                                <label>Last Name</label>
-				                                 <input type="text" id="last" class="form-control border-input" placeholder="Last Name">
-				                            </div>
-				                        </div>
-										<div class="col-md-10">
-				                            <div class="form-group">
-				                                <label for="exampleInputEmail1">Email address</label>
-				                                <input type="email" id="email" class="form-control border-input" placeholder="Email">
-				                            </div>
-				                        </div>
-										<div class="col-md-10">
-				                            <div class="form-group">
-				                                <label>ID Number</label>
-				                                 <input type="number" id="phone" class="form-control border-input" placeholder="1234567890">
-				                            </div>
-				                        </div>
-				                        <div class="text-center">
-				                            <button type="submit" class="btn btn-info btn-fill btn-wd"">Sign Up</button>
-				                        </div>
-				                        <div class="clearfix"></div>
-									</form>
-								</div>
+		                            <div class="header">
+		                                <h4 class="title">Edit Profile</h4>
+		                            </div>
+		                            <div class="content">
+		                                <form id="update">
+		                                    <div class="row">
+		                                        <div class="col-md-6">
+		                                            <div class="form-group">
+		                                                <label>ID</label>
+		                                                <input type="number" id="changeid" class="form-control border-input" placeholder="1234567890">
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-md-6">
+		                                            <div class="form-group">
+		                                                <label for="exampleInputEmail1">Email address</label>
+		                                                <input type="email" id="changeemail" class="form-control border-input" placeholder="Email">
+		                                            </div>
+		                                        </div>
+		                                    </div>
+
+		                                    <div class="row">
+		                                        <div class="col-md-6">
+		                                            <div class="form-group">
+		                                                <label>First Name</label>
+		                                                <input type="text" id="changefirst" class="form-control border-input" placeholder="Company">
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-md-6">
+		                                            <div class="form-group">
+		                                                <label>Last Name</label>
+		                                                <input type="text" id="changelast" class="form-control border-input" placeholder="Last Name">
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                    <h5 class="catergory" id="respond">
+		                                    	Please fill all blanks.
+		                                    </h5>
+		                                    <div class="text-center">
+		                                        <button type="update" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+		                                    </div>
+		                                    <div class="clearfix"></div>
+		                                </form>
+		                            </div>
+		                        </div>
 							</div>
 						</div>
 					</div>
